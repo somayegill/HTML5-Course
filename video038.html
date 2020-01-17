@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Forms</title>
+</head>
+
+<body>
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <!--
+      color
+      date
+      datetime-local
+      email
+      month
+      number
+      range
+      search
+      tel
+      time
+      url
+      week -->
+    <input type="color" name="favcolor"><br><br>
+    <input type="number" name="quantity" min="1" max="5"><br><br>
+
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <br><br>
+
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+
+    <br><br>
+    <input type="submit" value="submit form">
+    <input type="reset" value="reset form">
+  </form>
+</body>
+
+</html>

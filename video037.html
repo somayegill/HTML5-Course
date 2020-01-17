@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Forms</title>
+</head>
+
+<body>
+  <form action="somepage.php" method="POST" encrypt="multipart/form-data">
+    <!-- encrypt="multipart/form-data" -->
+
+    <!-- value vs placeholder (HTML5) -->
+    <input type="text" name="firstname" value="John">
+    <input type="text" name="firstname" placeholder="Enter Your Name">
+    value vs placeholder
+    <br><br>
+
+
+    <!-- readonly -->
+    <input type="text" name="firstname" value="John" readonly>
+    readonly
+    <br><br>
+
+
+    <!-- disabled -->
+    <input type="text" name="firstname" value="John" disabled>
+    disabled
+    <br><br>
+
+
+    <!-- required (HTML5) -->
+    <input type="text" name="firstname" required>
+    required
+    <br><br>
+
+
+    <!-- maxlength -->
+    <input type="text" name="firstname" maxlength="5">
+    maxlength
+    <br><br>
+
+    <!-- selected -->
+    <select name="cars">
+      <option value="volvo">volvo</option>
+      <option value="saab">saab</option>
+      <option value="fiat" selected>fiat</option>
+      <option value="audi">audi</option>
+    </select>
+    selected
+    <br><br>
+
+    <!-- checked -->
+    <input type="checkbox" name="vehicle1" value="bike">I have a bike<br>
+    <input type="checkbox" name="vehicle2" value="bike" checked>I have a car<br>
+    <input type="checkbox" name="vehicle3" value="bike">I have a motorcycle<br>
+    <br><br>
+
+    <input type="radio" name="gender" value="male" checked>male<br>
+    <input type="radio" name="gender" value="female">female<br>
+    <br><br>
+
+    <!-- file upload -->
+    <input type="file" name="myFile">
+    <br><br>
+
+    <input type="submit" value="submit form">
+    <input type="reset" value="reset form">
+  </form>
+</body>
+
+</html>
